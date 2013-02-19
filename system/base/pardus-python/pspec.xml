@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python modules for Pardus</Summary>
         <Description>Python modules for Pardus provides functions for common task, with the aim of easing development.</Description>
-        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://ftp.pardus.org.tr/pub/source/2011/pardus-python-0.4.8.tar.gz</Archive>
+        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://anka.pardus-linux.org/2013/source/pardus-python-0.4.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
             <Dependency>libX11-devel</Dependency>
