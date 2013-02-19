@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A library for online banking functions and financial data import/export</Summary>
         <Description>aqbanking is a library which provides a middle layer between applications and the various online banking libraries like AqHBCI.</Description>
-        <Archive sha1sum="865f7d05fcd48a507ba08f3f80442360c8973919" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/aqbanking-5.0.4.tar.gz</Archive>
+        <Archive sha1sum="80314a6f6114a0a3f0062161bb38effc0f1f4b62" type="targz">http://dl.dropbox.com/u/60245852/source/aqbanking-5.0.25.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>gwenhywfar-devel</Dependency>
@@ -56,6 +56,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-19</Date>
+            <Version>5.0.25</Version>
+            <Comment>Updated.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-06</Date>
             <Version>5.0.4</Version>
