@@ -11,8 +11,13 @@
         <License>NVIDIA</License>
         <Summary>NVIDIA drivers for GeForce 6xxx and newer GPUs</Summary>
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
-        <Archive sha1sum="e46000f2b464e431f2338c632138adbe29c5ce7b" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86/313.09/NVIDIA-Linux-x86-313.09.run</Archive>
-        <Archive sha1sum="0baaeb125b22873e6850243bf563c1bdaa4d7a2b" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86_64/313.09/NVIDIA-Linux-x86_64-313.09.run</Archive>
+        <Archive sha1sum="89fb7f687ceb294d92439122a0d3bbb9060f5259" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86/310.32/NVIDIA-Linux-x86-310.32.run</Archive>
+        <Archive sha1sum="3f2b8da482175d86697041eafa7710c8aa4362ed" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86_64/310.32/NVIDIA-Linux-x86_64-310.32.run</Archive>
+        <!--AdditionalFiles>
+            <AdditionalFile permission="0644" target="linux-3.7.6.patch">linux-3.7.6.patch</AdditionalFile>
+            <AdditionalFile permission="0644" target="nvidia-drivers-313.18-linux-3.7+.patch">nvidia-drivers-313.18-linux-3.7+.patch</AdditionalFile>
+            <AdditionalFile permission="0644" target="nvidia-drivers-313.18-builddir-config.patch">nvidia-drivers-313.18-builddir-config.patch</AdditionalFile>
+        </AdditionalFiles-->
         <BuildDependencies>
             <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
@@ -98,11 +103,11 @@
 
     <History>        
         <Update release="1">
-            <Date>2012-12-30</Date>
-            <Version>313.09</Version>
+            <Date>2013-02-19</Date>
+            <Version>310.32</Version>
             <Comment>First release</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
     </History>
 </PISI>

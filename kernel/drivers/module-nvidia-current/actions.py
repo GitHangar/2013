@@ -19,10 +19,12 @@ datadir = "/usr/share/%s" % driver
 
 if get.buildTYPE() == 'emul32':
     arch = "x86"
-    libdir = "/usr/lib32/%s" % driver
+    nvlibdir = "/usr/lib32/%s" % driver
+    libdir = "/usr/lib32"
 else:
     arch = get.ARCH().replace("i686", "x86")
-    libdir = "/usr/lib/%s" % driver
+    nvlibdir = "/usr/lib/%s" % driver
+    libdir = "/usr/lib"
 
 def setup():
     shelltools.system("sh NVIDIA-Linux-%s-%s.run -x --target tmp"
@@ -36,8 +38,12 @@ def setup():
     # xorg-server provides libwfb.so
     shelltools.unlink("libnvidia-wfb.so.*")
 
-    shelltools.echo("ld.so.conf", libdir)
-    shelltools.echo("XvMCConfig", "%s/libXvMCNVIDIA.so" % libdir)
+    shelltools.echo("ld.so.conf", nvlibdir)
+    shelltools.echo("XvMCConfig", "%s/libXvMCNVIDIA.so" % nvlibdir)
+    
+    #shelltools.system("patch --remove-empty-files --no-backup-if-mismatch -p2 -i linux-3.7.6.patch")
+    #shelltools.system("patch --remove-empty-files --no-backup-if-mismatch -p1 -i nvidia-drivers-313.18-linux-3.7+.patch")
+    #shelltools.system("patch --remove-empty-files --no-backup-if-mismatch -p1 -i nvidia-drivers-313.18-builddir-config.patch")
 
 def build():
     # We don't need kernel module for emul32 build
@@ -63,8 +69,8 @@ def install():
 
     ###  Libraries
     # OpenGl library
-    pisitools.dolib("libGL.so.%s" % version, libdir)
-    pisitools.dosym("libGL.so.%s" % version, "%s/libGL.so.1.2.0" % libdir)
+    pisitools.dolib("libGL.so.%s" % version, nvlibdir)
+    pisitools.dosym("libGL.so.%s" % version, "%s/libGL.so.1.2.0" % nvlibdir)
 
     # OpenCL
     pisitools.dolib("libOpenCL.so.1.0.0", libdir)
@@ -97,13 +103,13 @@ def install():
         pisitools.dolib("libnvidia-%s.so.%s" % (lib, version), libdir)
 
     # VDPAU driver
-    pisitools.dolib("libvdpau_nvidia.so.%s" % version, "%s/vdpau" % libdir)
-    pisitools.dosym("../nvidia-current/vdpau/libvdpau_nvidia.so.%s" % version, "%s/vdpau/libvdpau_nvidia.so.1" % libdir.strip(driver))
+    pisitools.dolib("libvdpau_nvidia.so.%s" % version, "%s/vdpau" % nvlibdir)
+    pisitools.dosym("../nvidia-current/vdpau/libvdpau_nvidia.so.%s" % version, "%s/vdpau/libvdpau_nvidia.so.1" % nvlibdir.strip(driver))
 
     # X modules
-    pisitools.dolib("nvidia_drv.so", "%s/modules/drivers" % libdir)
-    pisitools.dolib("libglx.so.%s" % version, "%s/modules/extensions" % libdir)
-    pisitools.dosym("libglx.so.%s" % version, "%s/modules/extensions/libglx.so" % libdir)
+    pisitools.dolib("nvidia_drv.so", "%s/modules/drivers" % nvlibdir)
+    pisitools.dolib("libglx.so.%s" % version, "%s/modules/extensions" % nvlibdir)
+    pisitools.dosym("libglx.so.%s" % version, "%s/modules/extensions/libglx.so" % nvlibdir)
 
     # Exit time for emul32 build
     if get.buildTYPE() == 'emul32':
