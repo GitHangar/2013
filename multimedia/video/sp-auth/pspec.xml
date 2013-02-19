@@ -20,6 +20,7 @@
 
     <Package>
         <Name>sp-auth</Name>
+        <RuntimeDependencies>
             <Dependency>libstdc++</Dependency>
         </RuntimeDependencies>
         <Files>
