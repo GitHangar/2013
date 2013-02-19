@@ -8,8 +8,7 @@
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GNU GPL</License>
-        <PartOf>multimedia.misc</PartOf>
+        <License>GPL</License>
         <Summary>Plex media server: Bilgisayardaki media dosyalarını televizyondan izlemeye yarar.</Summary>
         <Description>Plex tüm medyalaranızı düzenlemenize ve desteklenen tüm ortamlara aktarmanıza olanak sağlayan bir medya çözüm projesidir. </Description>
         <Archive sha1sum="79bf6d284e5b5f1493af7119083c8ce75d900404" type="binary" target="i686">http://www.plexapp.com/repo/pool/main/p/plexmediaserver/plexmediaserver_0.9.7.12.408-74b62af_i386.deb</Archive>
