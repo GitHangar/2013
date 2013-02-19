@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A collection manager for KDE</Summary>
         <Description>Tellico is a KDE application for organizing your collections. It provides default templates for books, bibliographies, videos, music, video games, coins, stamps, trading cards, comic books, and wines.</Description>
-        <Archive sha1sum="a362664cf90ccdc588e8fbe8392e82ee5fda36cd" type="tarbz2">http://tellico-project.org/files/tellico-2.3.6.tar.bz2</Archive>
+        <Archive sha1sum="c0dc6afb665594052de84866ff6dc6339c565717" type="tarbz2">http://tellico-project.org/files/tellico-2.3.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
@@ -68,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-19</Date>
+            <Version>2.3.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertangvn@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-28</Date>
             <Version>2.3.6</Version>
