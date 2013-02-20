@@ -15,15 +15,18 @@ from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
 shelltools.export("LDFLAGS", "%s -L/usr/lib/nss" % get.LDFLAGS())
+shelltools.export("CXXFLAGS", get.CXXFLAGS().replace("-ggdb3", "-g"))
 shelltools.export("ARCH_FLAGS", get.CXXFLAGS())
 shelltools.export("LINKFLAGSOPTIMIZE", get.LDFLAGS())
 shelltools.export("PYTHON", get.curPYTHON())
 
 def setup():
-    langs = "en-US af ar as bg bn br ca cs cy da de dz el es et eu fa fi fr ga gl gu he hi hr hu it ja ko kn lt lv mai ml mr nb nl nn nr nso or pa-IN pl pt pt-BR ro ru sh si sk sl sr ss st sv ta te th tn tr ts uk ve xh zh-CN zh-TW zu"
+    langs = "en-US af ar as bg bn br ca cs cy da de dz el es et eu fa fi fr ga gl gu he hr hu it ja ko kn lt lv mai ml mr nb nl nn nr nso or pa-IN pl pt pt-BR ro ru sh si sk sl sr ss st sv ta te th tn tr ts uk ve xh zh-CN zh-TW zu"
     vars = {"lang": langs,
-            "jobs": get.makeJOBS().replace("-j", ""),
+            "jobs": "1",
             "etar": get.workDIR()}
+#            "jobs": get.makeJOBS().replace("-j", ""),
+
 
     autotools.aclocal("-I m4")
     autotools.autoconf()
@@ -35,6 +38,7 @@ def setup():
                        --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
                        --libdir=/usr/lib --mandir=/usr/share/man \
                        --enable-release-build \
+                       --enable-verbose \
                        --disable-dependency-tracking \
                        --disable-rpath \
                        --disable-crashdump \
