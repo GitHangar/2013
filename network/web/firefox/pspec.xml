@@ -16,8 +16,8 @@
         <Summary>Firefox Web Browser</Summary>
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
         <!-- Use tools/{create-source.sh, create-locale.sh} scripts to create tarballs for both firefox source and l10n -->
-        <Archive sha1sum="fe5810d61edf6f4dc8bc477a08f9483b955f747b" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/18.0.2/source/firefox-18.0.2.source.tar.bz2</Archive>	
-        <Archive sha1sum="0210520ecb192073fb6b6a84d9f648ab7c88fed9" type="tarxz" target="mozilla-release">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firefox-l10n-18.0.2.tar.xz</Archive>
+        <Archive sha1sum="816d64e8c9432349cd208fd181d210c54f985351" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/19.0/source/firefox-19.0.source.tar.bz2</Archive>	
+        <Archive sha1sum="1ded29aee4c54dacfba1b967dc933ba741fef073" type="tarxz" target="mozilla-release">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firefox-l10n-19.0.tar.xz</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -59,9 +59,9 @@
      <Patches>
             <Patch level="1">suse/firefox-branded-icons.patch</Patch>
             <Patch level="1">suse/firefox-browser-css.patch</Patch>
-            <Patch level="1">suse/firefox-multilocale-chrome.patch</Patch>    
+            <Patch level="1">suse/firefox-multilocale-chrome.patch</Patch>  
             <Patch level="1">suse/firefox-no-default-ualocale.patch</Patch>
-            <Patch level="1">suse/mozilla-gstreamer-803287.patch</Patch>
+            <Patch level="1">suse/firefox-712763.patch</Patch>
             <Patch level="1">suse/mozilla-gstreamer-760140.patch</Patch>
             <Patch level="1">suse/mozilla-kde.patch</Patch>
             <Patch level="1">suse/mozilla-language.patch</Patch>
@@ -184,6 +184,17 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-02-19</Date>
+            <Version>19.0</Version>
+            <Comment>
+               * Built-in PDF viewer
+               * CSS @page is now supported
+               * security fixes
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2013-02-08</Date>
             <Version>18.0.2</Version>
