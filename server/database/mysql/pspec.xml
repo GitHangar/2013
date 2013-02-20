@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>A fast, multi-threaded, multi-user SQL database server</Summary>
         <Description>MySQL is a multithreaded, multi-user, robust SQL Database Management System (DBMS).</Description>
-        <Archive sha1sum="7b029e61db68866eeea0bec40d47fcdced30dd36" type="targz">http://cdn.mysql.com/Downloads/MySQL-5.5/mysql-5.5.28.tar.gz</Archive>
+        <Archive sha1sum="7b029e61db68866eeea0bec40d47fcdced30dd36" type="targz">http://anka.pardus-linux.org/2013/source/mysql-5.5.28.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ed</Dependency>
         </BuildDependencies>
