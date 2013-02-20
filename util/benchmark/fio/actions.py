@@ -11,7 +11,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
 def build():
-    autotools.make("CC='%s' EXTFLAGS='%s' V=1" % (get.CC(), get.CFLAGS()))
+    autotools.make()
 
 def install():
     autotools.install()
