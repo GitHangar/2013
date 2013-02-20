@@ -12,11 +12,12 @@
         <IsA>locale:pt</IsA>
         <Summary>Portuguese KDE4 internationalization package</Summary>
         <Description>kde-l10n-pt is the KDE4 internationalization package that provides Portuguese translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="0be684d21795c461ae50a73c305e8c480ff4088c">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-pt-4.9.98.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="79a28a660fc327278c78609466745afc441c4757">mirrors://kde/stable/4.10.0/src/kde-l10n/kde-l10n-pt-4.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
+    
     <Package>
         <Name>kde-l10n-pt</Name>
         <Replaces>
@@ -30,13 +31,21 @@
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
+    
     <History>
+        <Update release="2">
+            <Date>2013-02-20</Date>
+            <Version>4.10.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2013-01-19</Date>
             <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
+        </Update>      
     </History>
 </PISI>

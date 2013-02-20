@@ -12,7 +12,7 @@
         <IsA>locale:fa</IsA>
         <Summary>Persian KDE4 internationalization package</Summary>
         <Description>kde-l10n-fa is the KDE4 internationalization package that provides Persian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="3ca9f8fc84e3a089a996f2c02b46bda61d200b61">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-fa-4.9.98.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="53be88f834faa36254dad45976a9d4869517dc08">mirrors://kde/stable/4.10.0/src/kde-l10n/kde-l10n-fa-4.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -26,12 +26,19 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-20</Date>
+            <Version>4.10.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2013-01-19</Date>
             <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>     
+        </Update>      
     </History>
 </PISI>
