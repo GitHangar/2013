@@ -17,10 +17,10 @@
             <Dependency>libXt-devel</Dependency>
             <Dependency>libXaw-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="1">nas-1.9.2-asneeded.patch</Patch>
-	    <Patch level="1">nas-1.9.2-fix-str-fmt.patch</Patch>
-	  </Patches>-->
+            <Patches>
+                <Patch level="0">nas-1.9.2-asneeded.patch</Patch>
+                <Patch level="0">nas-1.9.2-fix-str-fmt.patch</Patch>
+            </Patches>
     </Source>
 
     <Package>
