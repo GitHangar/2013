@@ -38,6 +38,8 @@ Depoya Eklenme Durumu       Paketin Adı                     Paketçi  (İstekte
 --------------------------------------------------------------------------------------------------------------------------------------
 Merge Status                Package name                    Packager (Merge request owner)          Release No      Merge Committer
 --------------------------------------------------------------------------------------------------------------------------------------
+                            thunderbird                     circass                                   2
+                            firefox                         circass                                   4
 -                           flashplugin *207                circass                                   2
 -                           skype                           sezaiyeniay                               1      
 -                           audacity                        namso-01                                  2
