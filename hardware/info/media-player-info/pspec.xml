@@ -11,7 +11,7 @@
         <License>BSD</License>
         <Summary>Media player capability database</Summary>
         <Description>media-player-info is a repository of data files describing media player capabilities. These files contain information about the directory layout to use to add music to these devices, about the supported file formats, etc.</Description>
-        <Archive sha1sum="f81b1ba8662109b5d9ef420201d2221d5e453d6b" type="targz">http://www.freedesktop.org/software/media-player-info/media-player-info-15.tar.gz</Archive>
+        <Archive sha1sum="30266c341d6639b9b38b5640d1bfd7deb1535a74" type="zip">http://cgit.freedesktop.org/media-player-info/snapshot/media-player-info-17.zip</Archive>
         <BuildDependencies>
             <!-- For pkgconfig fixes in udev -->
             <Dependency>udev</Dependency>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-20</Date>
+            <Version>17</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2011-10-05</Date>
             <Version>15</Version>
