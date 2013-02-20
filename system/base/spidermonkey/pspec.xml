@@ -18,14 +18,7 @@
             <Dependency>nspr-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="2">spidermonkey-1.5-build.patch</Patch>
-            <Patch level="1">spidermonkey-1.6-header.patch</Patch>
-            <Patch level="2">js-1.7.0-threadsafe.patch</Patch>
-            <Patch level="2">js-1.7.0-make.patch</Patch>
-            <Patch level="1">js-shlib.patch</Patch>
-            <Patch level="2">no-lib64.patch</Patch>-->
             <Patch level="2">spidermonkey-1.8.5-fix-install-symlinks.patch</Patch>
-            <!--<Patch level="2">spidermonkey-1.8.7-filter_desc.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -56,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-20</Date>
+            <Version>1.8.5</Version>
+            <Comment>Cleanup package, bump for new build</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-20</Date>
             <Version>1.8.5</Version>
