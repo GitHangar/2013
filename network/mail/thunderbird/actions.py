@@ -11,7 +11,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-WorkDir = "comm-release"
+WorkDir = "comm-esr17"
 MOZAPPDIR= "/usr/lib/MozillaThunderbird"
 
 #locales = ["da", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "pt-BR", "ru",]

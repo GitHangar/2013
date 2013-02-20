@@ -14,16 +14,18 @@ ac_add_options --prefix=/usr
 ac_add_options --libdir=/usr/lib
 
 ac_add_options --enable-application=mail
+ac_add_options --enable-calendar
 ac_add_options --enable-libxul
 ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
-#ac_add_options --with-system-png
+ac_add_options --with-system-png
 ac_add_options --with-system-bz2
-#ac_add_options --enable-system-sqlite
+ac_add_options --enable-system-sqlite
 ac_add_options --enable-system-hunspell
-#ac_add_options --enable-system-cairo
+ac_add_options --enable-timeline
+ac_add_options --disable-system-cairo
 ac_add_options --with-pthreads
 ac_add_options --disable-tests
 ac_add_options --disable-mochitest
@@ -38,7 +40,7 @@ ac_add_options --disable-system-java
 ac_add_options --enable-xinerama
 ac_add_options --disable-crashreporter
 ac_add_options --enable-default-toolkit=cairo-gtk2
-ac_add_options --disable-xprint
+ac_add_options --enable-xprint
 ac_add_options --disable-strip
 ac_add_options --enable-pango
 ac_add_options --enable-startup-notification
@@ -46,11 +48,12 @@ ac_add_options --enable-svg
 ac_add_options --enable-canvas
 ac_add_options --enable-crypto
 ac_add_options --enable-mathml
-ac_add_options --disable-gnomevfs
+ac_add_options --enable-gnomevfs
 ac_add_options --enable-gio
 ac_add_options --enable-optimize
 ac_add_options --with-system-libevent
-#ac_add_options --with-system-libvpx
+ac_add_options --enable-system-sasl
+ac_add_options --with-system-libvpx
 ac_add_options --enable-official-branding
 
 ac_add_options --with-default-mozilla-five-home=/usr/lib/MozillaThunderbird

@@ -1,6 +1,6 @@
-diff -Naur comm-release.orig/mail/app/profile/mimeTypes.rdf comm-release/mail/app/profile/mimeTypes.rdf
---- comm-release.orig/mail/app/profile/mimeTypes.rdf	2012-04-21 00:32:37.000000000 +0200
-+++ comm-release/mail/app/profile/mimeTypes.rdf	2012-04-30 11:18:39.344000038 +0200
+diff -Naur comm-esr17.orig/mail/app/profile/mimeTypes.rdf comm-esr17/mail/app/profile/mimeTypes.rdf
+--- comm-esr17.orig/mail/app/profile/mimeTypes.rdf	2012-04-21 00:32:37.000000000 +0200
++++ comm-esr17/mail/app/profile/mimeTypes.rdf	2012-04-30 11:18:39.344000038 +0200
 @@ -79,4 +79,49 @@
        </RDF:Seq>
      </NC:MIME-types> 
@@ -51,9 +51,9 @@ diff -Naur comm-release.orig/mail/app/profile/mimeTypes.rdf comm-release/mail/ap
 +                   NC:prettyName="firefox"
 +                   NC:path="/usr/bin/firefox" />
  </RDF:RDF>
-diff -Naur comm-release.orig/mozilla/build/unix/run-mozilla.sh comm-release/mozilla/build/unix/run-mozilla.sh
---- comm-release.orig/mozilla/build/unix/run-mozilla.sh	2012-04-21 00:39:55.000000000 +0200
-+++ comm-release/mozilla/build/unix/run-mozilla.sh	2012-04-30 11:21:34.226000039 +0200
+diff -Naur comm-esr17.orig/mozilla/build/unix/run-mozilla.sh comm-esr17/mozilla/build/unix/run-mozilla.sh
+--- comm-esr17.orig/mozilla/build/unix/run-mozilla.sh	2012-04-21 00:39:55.000000000 +0200
++++ comm-esr17/mozilla/build/unix/run-mozilla.sh	2012-04-30 11:21:34.226000039 +0200
 @@ -108,7 +108,7 @@
  	done="no"
  	for d in $debuggers

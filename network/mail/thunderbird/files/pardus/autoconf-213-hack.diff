@@ -1,7 +1,7 @@
-Index: comm-release/autoconf-213/autoconf-2.13
+Index: comm-esr17/autoconf-213/autoconf-2.13
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/autoconf-2.13
++++ comm-esr17/autoconf-213/autoconf-2.13
 @@ -0,0 +1,159 @@
 +#! /bin/sh
 +# autoconf -- create `configure' using m4 macros
@@ -162,10 +162,10 @@ Index: comm-release/autoconf-213/autoconf-2.13
 +rm -f $tmpout
 +
 +exit $status
-Index: comm-release/autoconf-213/m4/acconfig.h
+Index: comm-esr17/autoconf-213/m4/acconfig.h
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acconfig.h
++++ comm-esr17/autoconf-213/m4/acconfig.h
 @@ -0,0 +1,277 @@
 +/* acconfig.h
 +   This file is in the public domain.
@@ -444,10 +444,10 @@ Index: comm-release/autoconf-213/m4/acconfig.h
 +   If you're adding to this file, keep in mind:
 +   The entries are in sort -df order: alphabetical, case insensitive,
 +   ignoring punctuation (such as underscores).  */
-Index: comm-release/autoconf-213/m4/acfunctions
+Index: comm-esr17/autoconf-213/m4/acfunctions
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acfunctions
++++ comm-esr17/autoconf-213/m4/acfunctions
 @@ -0,0 +1,60 @@
 +# Ones that have their own macros.
 +major		AC_HEADER_MAJOR
@@ -509,10 +509,10 @@ Index: comm-release/autoconf-213/m4/acfunctions
 +strtol		AC_CHECK_FUNCS
 +strtoul		AC_CHECK_FUNCS
 +uname		AC_CHECK_FUNCS
-Index: comm-release/autoconf-213/m4/acgeneral.m4
+Index: comm-esr17/autoconf-213/m4/acgeneral.m4
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acgeneral.m4
++++ comm-esr17/autoconf-213/m4/acgeneral.m4
 @@ -0,0 +1,2607 @@
 +dnl Parameterized macros.
 +dnl Requires GNU m4.
@@ -3121,10 +3121,10 @@ Index: comm-release/autoconf-213/m4/acgeneral.m4
 +  done
 +fi
 +])
-Index: comm-release/autoconf-213/m4/acheaders
+Index: comm-esr17/autoconf-213/m4/acheaders
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acheaders
++++ comm-esr17/autoconf-213/m4/acheaders
 @@ -0,0 +1,28 @@
 +# Ones that have their own macros.
 +dirent.h	AC_HEADER_DIRENT
@@ -3154,10 +3154,10 @@ Index: comm-release/autoconf-213/m4/acheaders
 +syslog.h	AC_CHECK_HEADERS
 +termio.h	AC_CHECK_HEADERS
 +unistd.h	AC_CHECK_HEADERS
-Index: comm-release/autoconf-213/m4/acidentifiers
+Index: comm-esr17/autoconf-213/m4/acidentifiers
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acidentifiers
++++ comm-esr17/autoconf-213/m4/acidentifiers
 @@ -0,0 +1,22 @@
 +sys_siglist	AC_DECL_SYS_SIGLIST
 +mode_t		AC_TYPE_MODE_T
@@ -3181,10 +3181,10 @@ Index: comm-release/autoconf-213/m4/acidentifiers
 +tm_zone		AC_STRUCT_TIMEZONE
 +const		AC_C_CONST
 +inline		AC_C_INLINE
-Index: comm-release/autoconf-213/m4/acmakevars
+Index: comm-esr17/autoconf-213/m4/acmakevars
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acmakevars
++++ comm-esr17/autoconf-213/m4/acmakevars
 @@ -0,0 +1,11 @@
 +LN		AC_PROG_LN_S
 +AWK		AC_PROG_AWK
@@ -3197,10 +3197,10 @@ Index: comm-release/autoconf-213/m4/acmakevars
 +YACC		AC_PROG_YACC
 +BISON		AC_PROG_YACC
 +MAKE		AC_PROG_MAKE_SET
-Index: comm-release/autoconf-213/m4/acoldnames.m4
+Index: comm-esr17/autoconf-213/m4/acoldnames.m4
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acoldnames.m4
++++ comm-esr17/autoconf-213/m4/acoldnames.m4
 @@ -0,0 +1,80 @@
 +dnl Map old names of Autoconf macros to new regularized names.
 +dnl This file is part of Autoconf.
@@ -3282,10 +3282,10 @@ Index: comm-release/autoconf-213/m4/acoldnames.m4
 +AC_DEFUN(AC_RESTARTABLE_SYSCALLS, [indir([AC_SYS_RESTARTABLE_SYSCALLS])])dnl
 +AC_DEFUN(AC_FIND_X, [indir([AC_PATH_X])])dnl
 +AC_DEFUN(AC_FIND_XTRA, [indir([AC_PATH_XTRA])])dnl
-Index: comm-release/autoconf-213/m4/acprograms
+Index: comm-esr17/autoconf-213/m4/acprograms
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acprograms
++++ comm-esr17/autoconf-213/m4/acprograms
 @@ -0,0 +1,18 @@
 +ln		AC_PROG_LN_S
 +awk		AC_PROG_AWK
@@ -3305,10 +3305,10 @@ Index: comm-release/autoconf-213/m4/acprograms
 +byacc		AC_PROG_YACC
 +bison		AC_PROG_YACC
 +make		AC_PROG_MAKE_SET
-Index: comm-release/autoconf-213/m4/acspecific.m4
+Index: comm-esr17/autoconf-213/m4/acspecific.m4
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/acspecific.m4
++++ comm-esr17/autoconf-213/m4/acspecific.m4
 @@ -0,0 +1,2758 @@
 +dnl Macros that test for specific features.
 +dnl This file is part of Autoconf.
@@ -6068,10 +6068,10 @@ Index: comm-release/autoconf-213/m4/acspecific.m4
 +[AC_OBSOLETE([$0], [; instead use AC_FUNC_STRFTIME])dnl
 +AC_CHECK_LIB(intl, strftime, LIBS="-lintl $LIBS")
 +])
-Index: comm-release/autoconf-213/m4/autoconf.m4
+Index: comm-esr17/autoconf-213/m4/autoconf.m4
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/autoconf.m4
++++ comm-esr17/autoconf-213/m4/autoconf.m4
 @@ -0,0 +1,28 @@
 +dnl Driver that loads the Autoconf macro files.
 +dnl Requires GNU m4.
@@ -6101,10 +6101,10 @@ Index: comm-release/autoconf-213/m4/autoconf.m4
 +dnl Do not sinclude acsite.m4 here, because it may not be installed
 +dnl yet when Autoconf is frozen.
 +dnl Do not sinclude ./aclocal.m4 here, to prevent it from being frozen.
-Index: comm-release/autoconf-213/m4/autoconf.m4f
+Index: comm-esr17/autoconf-213/m4/autoconf.m4f
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/autoconf.m4f
++++ comm-esr17/autoconf-213/m4/autoconf.m4f
 @@ -0,0 +1,4820 @@
 +# This is a frozen state file generated by GNU M4 1.4.4
 +V1
@@ -10926,10 +10926,10 @@ Index: comm-release/autoconf-213/m4/autoconf.m4f
 +D-1,0
 +
 +# End of frozen state file
-Index: comm-release/autoconf-213/m4/autoheader.m4
+Index: comm-esr17/autoconf-213/m4/autoheader.m4
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/autoheader.m4
++++ comm-esr17/autoconf-213/m4/autoheader.m4
 @@ -0,0 +1,110 @@
 +dnl Driver and redefinitions of some Autoconf macros for autoheader.
 +dnl This file is part of Autoconf.
@@ -11041,10 +11041,10 @@ Index: comm-release/autoconf-213/m4/autoheader.m4
 +#undef $1
 +"@@@
 +])])
-Index: comm-release/autoconf-213/m4/autoheader.m4f
+Index: comm-esr17/autoconf-213/m4/autoheader.m4f
 ===================================================================
 --- /dev/null
-+++ comm-release/autoconf-213/m4/autoheader.m4f
++++ comm-esr17/autoconf-213/m4/autoheader.m4f
 @@ -0,0 +1,4766 @@
 +# This is a frozen state file generated by GNU M4 1.4.4
 +V1
@@ -15812,10 +15812,10 @@ Index: comm-release/autoconf-213/m4/autoheader.m4f
 +D-1,0
 +
 +# End of frozen state file
-Index: comm-release/client.mk
+Index: comm-esr17/client.mk
 ===================================================================
 --- thunderbird.orig/client.mk
-+++ comm-release/client.mk
++++ comm-esr17/client.mk
 @@ -254,7 +254,7 @@ EXTRA_CONFIG_DEPS := \
  
  $(CONFIGURES): %: %.in $(EXTRA_CONFIG_DEPS)

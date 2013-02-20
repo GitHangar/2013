@@ -16,8 +16,8 @@
         <PartOf>network.mail</PartOf>
         <Summary>The Stand-Alone Mozilla Mail Component</Summary>
         <Description>Thunderbird is a redesign of the Mozilla Mail Component. It is written using the XUL user interface language and designed to be cross-platform.</Description>
-        <Archive sha1sum="37fc07ea77d76946b3ed4735a33807590ae09c96" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/17.0.2/source/thunderbird-17.0.2.source.tar.bz2</Archive>
-	<Archive sha1sum="58666183a9cb8dcecb99d5e9d5c4b5edec6d2558" type="tarxz" target="comm-release">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/thunderbird-l10n-17.0.2.tar.xz</Archive>	
+        <Archive sha1sum="a60453c7264ae60ab45e8c20d0a613d899678d38" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/17.0.3/source/thunderbird-17.0.3.source.tar.bz2</Archive>
+	<Archive sha1sum="e41e549475158008a8574593760eaa6c96ce136d" type="tarxz" target="comm-esr17">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/thunderbird-l10n-17.0.3.tar.xz</Archive>	
         <AdditionalFiles>
             <AdditionalFile target=".mozconfig">pardus/mozconfig</AdditionalFile>
             <AdditionalFile target=".pardus-default-prefs.js">pardus/pardus-default-prefs.js</AdditionalFile>
@@ -51,22 +51,20 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>cyrus-sasl-devel</Dependency>
+            <Dependency>gnome-vfs-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- SuSE patches -->
-            <!--<Patch level="1">suse/mozilla-kde.patch</Patch>-->
-            <Patch level="1">suse/mozilla-language.patch</Patch>
+            <!-- SuSE patches 
+            <Patch level="1">suse/mozilla-kde.patch</Patch>
+            <Patch level="1">suse/mozilla-language.patch</Patch>-->
             <Patch level="1">suse/mozilla-nongnome-proxies.patch</Patch>
             <Patch level="1">suse/tb-develdirs.patch</Patch>
             <Patch level="1">suse/tb-ssldap.patch</Patch>
             <Patch level="1">suse/thunderbird-shared-nss-db.patch</Patch>
                                            
             <!-- MaGeia patches -->
-            <Patch level="1">mageia/mozilla-thunderbird-enigmail-package.patch</Patch>
-            <Patch level="1">mageia/thunderbird-appname.patch</Patch>
-    
-           <!-- RoSa patches -->
-           <Patch level="0">rosa/no_optimization_override.diff</Patch>    
+            <Patch level="1">mageia/mozilla-thunderbird-enigmail-package.patch</Patch> 
             <!-- Pardus patches-->
             <!-- autoconf hack -->
            <Patch level="1">pardus/autoconf-213-hack.diff</Patch>
@@ -113,6 +111,8 @@
             <Dependency>openldap-client</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>mesa</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>gnome-vfs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -144,6 +144,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-19</Date>
+            <Version>17.0.3</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-26</Date>
             <Version>17.0.2</Version>

@@ -3,9 +3,9 @@
 # Parent 0d6917b8f28f6e0398dbf329dda4932ba4f997c2
 Bug 583793 - Firefox interface language set to LANG, ignores LANGUAGE
 
-diff --git comm-release-orig/mozilla/intl/locale/src/nsLocaleService.cpp b/intl/locale/src/nsLocaleService.cpp
---- comm-release-orig/mozilla/intl/locale/src/nsLocaleService.cpp
-+++ comm-release/mozilla/intl/locale/src/nsLocaleService.cpp
+diff --git a/intl/locale/src/nsLocaleService.cpp b/intl/locale/src/nsLocaleService.cpp
+--- a/intl/locale/src/nsLocaleService.cpp
++++ b/intl/locale/src/nsLocaleService.cpp
 @@ -160,16 +160,17 @@ nsLocaleService::nsLocaleService(void)
      nsRefPtr<nsLocale> resultLocale(new nsLocale());
      NS_ENSURE_TRUE(resultLocale, );

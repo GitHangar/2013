@@ -1,5 +1,5 @@
---- comm-release-orig/mozilla/modules/libpref/src/Makefile.in	2012-11-16 23:16:35.000000000 +0200
-+++ comm-release/mozilla/modules/libpref/src/Makefile.in	2012-11-26 20:09:16.817000051 +0200
+--- comm-esr17-orig/mozilla/modules/libpref/src/Makefile.in	2012-11-16 23:16:35.000000000 +0200
++++ comm-esr17/mozilla/modules/libpref/src/Makefile.in	2012-11-26 20:09:16.817000051 +0200
 @@ -50,6 +50,8 @@
  	$(ELOG) $(CCC) $(OUTOPTION)$@ -c $(COMPILE_CXXFLAGS:-O2=-O1) $(_VPATH_SRCS)
  endif
@@ -9,8 +9,8 @@
  
  greprefs.js: $(GREPREF_FILES)
  	$(PYTHON) $(topsrcdir)/config/Preprocessor.py $(PREF_PPFLAGS) $(DEFINES) $(ACDEFINES) $(XULPPFLAGS) $^ > $@
---- comm-release-orig/mozilla/modules/libpref/src/Preferences.cpp	2012-11-16 23:16:35.000000000 +0200
-+++ comm-release/mozilla/modules/libpref/src/Preferences.cpp	2012-11-26 20:30:53.419000051 +0200
+--- comm-esr17-orig/mozilla/modules/libpref/src/Preferences.cpp	2012-11-16 23:16:35.000000000 +0200
++++ comm-esr17/mozilla/modules/libpref/src/Preferences.cpp	2012-11-26 20:30:53.419000051 +0200
 @@ -28,6 +28,7 @@
  #include "nsCOMArray.h"
  #include "nsXPCOMCID.h"
@@ -79,8 +79,8 @@
    rv = pref_LoadPrefsInDir(defaultPrefDir, specialFiles, ArrayLength(specialFiles));
    if (NS_FAILED(rv))
      NS_WARNING("Error parsing application default preferences.");
---- comm-release-orig/mozilla/toolkit/components/downloads/Makefile.in	2012-11-16 23:16:39.000000000 +0200
-+++ comm-release/mozilla/toolkit/components/downloads/Makefile.in	2012-11-26 20:34:47.593000051 +0200
+--- comm-esr17-orig/mozilla/toolkit/components/downloads/Makefile.in	2012-11-16 23:16:39.000000000 +0200
++++ comm-esr17/mozilla/toolkit/components/downloads/Makefile.in	2012-11-26 20:34:47.593000051 +0200
 @@ -46,4 +46,7 @@
  
  include $(topsrcdir)/config/rules.mk
@@ -89,8 +89,8 @@
 +
 +
  CXXFLAGS += $(TK_CFLAGS)
---- comm-release-orig/mozilla/toolkit/components/downloads/nsDownloadManager.cpp	2012-11-16 23:16:39.000000000 +0200
-+++ comm-release/mozilla/toolkit/components/downloads/nsDownloadManager.cpp	2012-11-26 20:47:06.703000051 +0200
+--- comm-esr17-orig/mozilla/toolkit/components/downloads/nsDownloadManager.cpp	2012-11-16 23:16:39.000000000 +0200
++++ comm-esr17/mozilla/toolkit/components/downloads/nsDownloadManager.cpp	2012-11-26 20:47:06.703000051 +0200
 @@ -35,16 +35,20 @@
  
  #ifdef XP_WIN
@@ -160,8 +160,8 @@
  
        if (fileURL &&
            NS_SUCCEEDED(fileURL->GetFile(getter_AddRefs(file))) &&
---- comm-release-orig/mozilla/toolkit/content/jar.mn	2012-11-16 23:16:40.000000000 +0200
-+++ comm-release/mozilla/toolkit/content/jar.mn	2012-11-26 20:51:46.184000050 +0200
+--- comm-esr17-orig/mozilla/toolkit/content/jar.mn	2012-11-16 23:16:40.000000000 +0200
++++ comm-esr17/mozilla/toolkit/content/jar.mn	2012-11-26 20:51:46.184000050 +0200
 @@ -50,6 +50,8 @@
     content/global/bindings/colorpicker.xml     (widgets/colorpicker.xml)
     content/global/bindings/datetimepicker.xml  (widgets/datetimepicker.xml)
@@ -180,10 +180,10 @@
     content/global/bindings/progressmeter.xml   (widgets/progressmeter.xml)
     content/global/bindings/radio.xml           (widgets/radio.xml)
     content/global/bindings/resizer.xml         (widgets/resizer.xml)
-diff --git comm-release-orig/mozilla/toolkit/content/widgets/dialog-kde.xml b/toolkit/content/widgets/dialog-kde.xml
+diff --git comm-esr17-orig/mozilla/toolkit/content/widgets/dialog-kde.xml b/toolkit/content/widgets/dialog-kde.xml
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/toolkit/content/widgets/dialog-kde.xml
++++ comm-esr17/mozilla/toolkit/content/widgets/dialog-kde.xml
 @@ -0,0 +1,451 @@
 +<?xml version="1.0"?>
 +<!-- This Source Code Form is subject to the terms of the Mozilla Public
@@ -1980,9 +1980,9 @@ new file mode 100644
 +#    PrefWindow II  (???)
 +#    PrefWindow I   (June 4, 1999)
 +#
-diff --git comm-release-orig/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp b/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
---- comm-release-orig/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
-+++ comm-release/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
+diff --git comm-esr17-orig/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp b/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
+--- comm-esr17-orig/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
++++ comm-esr17/mozilla/toolkit/system/unixproxy/nsUnixSystemProxySettings.cpp
 @@ -13,16 +13,19 @@
  #include "prnetdb.h"
  #include "prenv.h"
@@ -2076,9 +2076,9 @@ diff --git comm-release-orig/mozilla/toolkit/system/unixproxy/nsUnixSystemProxyS
 +  return NS_OK;
 +}
 +
-diff --git comm-release-orig/mozilla/toolkit/xre/Makefile.in b/toolkit/xre/Makefile.in
---- comm-release-orig/mozilla/toolkit/xre/Makefile.in
-+++ comm-release/mozilla/toolkit/xre/Makefile.in
+diff --git comm-esr17-orig/mozilla/toolkit/xre/Makefile.in b/toolkit/xre/Makefile.in
+--- comm-esr17-orig/mozilla/toolkit/xre/Makefile.in
++++ comm-esr17/mozilla/toolkit/xre/Makefile.in
 @@ -69,17 +69,18 @@ else
  ifeq ($(MOZ_WIDGET_TOOLKIT),cocoa)
  CMMSRCS = nsNativeAppSupportCocoa.mm
@@ -2099,10 +2099,10 @@ diff --git comm-release-orig/mozilla/toolkit/xre/Makefile.in b/toolkit/xre/Makef
  CPPSRCS += nsQAppInstance.cpp
  EXPORTS += nsQAppInstance.h
  else
-diff --git comm-release-orig/mozilla/toolkit/xre/nsKDEUtils.cpp b/toolkit/xre/nsKDEUtils.cpp
+diff --git comm-esr17-orig/mozilla/toolkit/xre/nsKDEUtils.cpp b/toolkit/xre/nsKDEUtils.cpp
 new file mode 100644
 --- /dev/null
-+++comm-release/mozilla/toolkit/xre/nsKDEUtils.cpp
++++comm-esr17/mozilla/toolkit/xre/nsKDEUtils.cpp
 @@ -0,0 +1,341 @@
 +/* -*- Mode: C++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
 +/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -2445,10 +2445,10 @@ new file mode 100644
 +    fputs( "\\E\n", commandFile ); // done as \E, so it cannot happen in normal data
 +    fflush( commandFile );
 +    }
-diff --git comm-release-orig/mozilla/toolkit/xre/nsKDEUtils.h b/toolkit/xre/nsKDEUtils.h
+diff --git comm-esr17-orig/mozilla/toolkit/xre/nsKDEUtils.h b/toolkit/xre/nsKDEUtils.h
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/toolkit/xre/nsKDEUtils.h
++++ comm-esr17/mozilla/toolkit/xre/nsKDEUtils.h
 @@ -0,0 +1,48 @@
 +/* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 +/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -2498,9 +2498,9 @@ new file mode 100644
 +    };
 +
 +#endif // nsKDEUtils
-diff --git comm-release-orig/mozilla/uriloader/exthandler/Makefile.in b/uriloader/exthandler/Makefile.in
---- comm-release-orig/mozilla/uriloader/exthandler/Makefile.in
-+++ comm-release/mozilla/uriloader/exthandler/Makefile.in
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/Makefile.in b/uriloader/exthandler/Makefile.in
+--- comm-esr17-orig/mozilla/uriloader/exthandler/Makefile.in
++++ comm-esr17/mozilla/uriloader/exthandler/Makefile.in
 @@ -58,18 +58,19 @@ LOCAL_INCLUDES = -I$(srcdir)
  LOCAL_INCLUDES += -I$(topsrcdir)/dom/base \
              -I$(topsrcdir)/dom/ipc \
@@ -2522,10 +2522,10 @@ diff --git comm-release-orig/mozilla/uriloader/exthandler/Makefile.in b/uriloade
  OSHELPER += nsExternalSharingAppService.cpp
  EXPORTS += nsExternalSharingAppService.h
  OSHELPER += nsExternalURLHandlerService.cpp
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsCommonRegistry.cpp b/uriloader/exthandler/unix/nsCommonRegistry.cpp
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsCommonRegistry.cpp b/uriloader/exthandler/unix/nsCommonRegistry.cpp
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsCommonRegistry.cpp
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsCommonRegistry.cpp
 @@ -0,0 +1,54 @@
 +/* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 +/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -2581,10 +2581,10 @@ new file mode 100644
 +        return nsKDERegistry::GetFromType( aMIMEType );
 +    return nsGNOMERegistry::GetFromType( aMIMEType );
 +}
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsCommonRegistry.h b/uriloader/exthandler/unix/nsCommonRegistry.h
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsCommonRegistry.h b/uriloader/exthandler/unix/nsCommonRegistry.h
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsCommonRegistry.h
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsCommonRegistry.h
 @@ -0,0 +1,23 @@
 +/* This Source Code Form is subject to the terms of the Mozilla Public
 + * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -2609,10 +2609,10 @@ new file mode 100644
 +
 +  static already_AddRefed<nsMIMEInfoBase> GetFromType(const nsACString& aMIMEType);
 +};
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsKDERegistry.cpp b/uriloader/exthandler/unix/nsKDERegistry.cpp
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsKDERegistry.cpp b/uriloader/exthandler/unix/nsKDERegistry.cpp
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsKDERegistry.cpp
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsKDERegistry.cpp
 @@ -0,0 +1,86 @@
 +/* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 +/* This Source Code Form is subject to the terms of the Mozilla Public
@@ -2700,10 +2700,10 @@ new file mode 100644
 +        }
 +    return nullptr;
 +}
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsKDERegistry.h b/uriloader/exthandler/unix/nsKDERegistry.h
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsKDERegistry.h b/uriloader/exthandler/unix/nsKDERegistry.h
 new file mode 100644
 --- /dev/null
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsKDERegistry.h
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsKDERegistry.h
 @@ -0,0 +1,29 @@
 +/* This Source Code Form is subject to the terms of the Mozilla Public
 + * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -2734,9 +2734,9 @@ new file mode 100644
 +  static already_AddRefed<nsMIMEInfoBase> GetFromHelper(const nsTArray<nsCString>& command);
 +
 +};
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp b/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
---- comm-release-orig/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp b/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
+--- comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cpp
 @@ -16,30 +16,33 @@
  #include <QString>
  #if (MOZ_ENABLE_CONTENTACTION)
@@ -2851,9 +2851,9 @@ diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsMIMEInfoUnix.cp
        if (NS_SUCCEEDED(giovfs->GetAppForMimeType(type, getter_AddRefs(app))) && app)
          return app->Launch(uriSpec);
      } else if (gnomevfs) {
-diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp b/uriloader/exthandler/unix/nsOSHelperAppService.cpp
---- comm-release-orig/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp
-+++ comm-release/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp
+diff --git comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp b/uriloader/exthandler/unix/nsOSHelperAppService.cpp
+--- comm-esr17-orig/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp
++++ comm-esr17/mozilla/uriloader/exthandler/unix/nsOSHelperAppService.cpp
 @@ -10,17 +10,17 @@
  #if defined(MOZ_ENABLE_CONTENTACTION)
  #include <contentaction/contentaction.h>
@@ -2943,9 +2943,9 @@ diff --git comm-release-orig/mozilla/uriloader/exthandler/unix/nsOSHelperAppServ
  #endif
  
    // Now look up our extensions
-diff --git comm-release-orig/mozilla/widget/gtk2/Makefile.in b/widget/gtk2/Makefile.in
---- comm-release-orig/mozilla/widget/gtk2/Makefile.in
-+++ comm-release/mozilla/widget/gtk2/Makefile.in
+diff --git comm-esr17-orig/mozilla/widget/gtk2/Makefile.in b/widget/gtk2/Makefile.in
+--- comm-esr17-orig/mozilla/widget/gtk2/Makefile.in
++++ comm-esr17/mozilla/widget/gtk2/Makefile.in
 @@ -104,11 +104,14 @@ DEFINES		+= -DCAIRO_GFX -DMOZ_APP_NAME='
  
  INCLUDES	+= \
@@ -2961,9 +2961,9 @@ diff --git comm-release-orig/mozilla/widget/gtk2/Makefile.in b/widget/gtk2/Makef
  ifdef MOZ_X11
  INCLUDES   	+= -I$(srcdir)/../shared/x11
  endif
-diff --git comm-release-orig/mozilla/widget/gtk2/nsFilePicker.cpp b/widget/gtk2/nsFilePicker.cpp
---- comm-release-orig/mozilla/widget/gtk2/nsFilePicker.cpp
-+++ comm-release/mozilla/widget/gtk2/nsFilePicker.cpp
+diff --git comm-esr17-orig/mozilla/widget/gtk2/nsFilePicker.cpp b/widget/gtk2/nsFilePicker.cpp
+--- comm-esr17-orig/mozilla/widget/gtk2/nsFilePicker.cpp
++++ comm-esr17/mozilla/widget/gtk2/nsFilePicker.cpp
 @@ -1,16 +1,17 @@
  /* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
  /* This Source Code Form is subject to the terms of the Mozilla Public
@@ -3290,9 +3290,9 @@ diff --git comm-release-orig/mozilla/widget/gtk2/nsFilePicker.cpp b/widget/gtk2/
 +    return NS_OK;
 +    }
 +
-diff --git comm-release-orig/mozilla/widget/gtk2/nsFilePicker.h b/widget/gtk2/nsFilePicker.h
---- comm-release-orig/mozilla/widget/gtk2/nsFilePicker.h
-+++ comm-release/mozilla/widget/gtk2/nsFilePicker.h
+diff --git comm-esr17-orig/mozilla/widget/gtk2/nsFilePicker.h b/widget/gtk2/nsFilePicker.h
+--- comm-esr17-orig/mozilla/widget/gtk2/nsFilePicker.h
++++ comm-esr17/mozilla/widget/gtk2/nsFilePicker.h
 @@ -67,11 +67,17 @@ protected:
    nsString  mDefault;
    nsString  mDefaultExtension;
@@ -3311,9 +3311,9 @@ diff --git comm-release-orig/mozilla/widget/gtk2/nsFilePicker.h b/widget/gtk2/ns
  };
  
  #endif
-diff --git comm-release-orig/mozilla/xpcom/components/Makefile.in b/xpcom/components/Makefile.in
---- comm-release-orig/mozilla/xpcom/components/Makefile.in
-+++ comm-release/mozilla/xpcom/components/Makefile.in
+diff --git comm-esr17-orig/mozilla/xpcom/components/Makefile.in b/xpcom/components/Makefile.in
+--- comm-esr17-orig/mozilla/xpcom/components/Makefile.in
++++ comm-esr17/mozilla/xpcom/components/Makefile.in
 @@ -59,10 +59,11 @@ LOCAL_INCLUDES	= \
  # we don't want the shared lib, but we want to force the creation of a static lib.
  FORCE_STATIC_LIB = 1
@@ -3326,9 +3326,9 @@ diff --git comm-release-orig/mozilla/xpcom/components/Makefile.in b/xpcom/compon
 +LOCAL_INCLUDES += -I$(topsrcdir)/toolkit/xre
  CXXFLAGS += $(MOZ_GTK2_CFLAGS)
  endif
-diff --git comm-release-orig/mozilla/xpcom/components/ManifestParser.cpp b/xpcom/components/ManifestParser.cpp
---- comm-release-orig/mozilla/xpcom/components/ManifestParser.cpp
-+++ comm-release/mozilla/xpcom/components/ManifestParser.cpp
+diff --git comm-esr17-orig/mozilla/xpcom/components/ManifestParser.cpp b/xpcom/components/ManifestParser.cpp
+--- comm-esr17-orig/mozilla/xpcom/components/ManifestParser.cpp
++++ comm-esr17/mozilla/xpcom/components/ManifestParser.cpp
 @@ -30,16 +30,17 @@
  #include "nsTextFormatter.h"
  #include "nsVersionComparator.h"
@@ -3457,9 +3457,9 @@ diff --git comm-release-orig/mozilla/xpcom/components/ManifestParser.cpp b/xpcom
  
      if (directive->regfunc) {
        if (GeckoProcessType_Default != XRE_GetProcessType())
-diff --git comm-release-orig/mozilla/xpcom/io/Makefile.in b/xpcom/io/Makefile.in
---- comm-release-orig/mozilla/xpcom/io/Makefile.in
-+++ comm-release/mozilla/xpcom/io/Makefile.in
+diff --git comm-esr17-orig/mozilla/xpcom/io/Makefile.in b/xpcom/io/Makefile.in
+--- comm-esr17-orig/mozilla/xpcom/io/Makefile.in
++++ comm-esr17/mozilla/xpcom/io/Makefile.in
 @@ -157,17 +157,17 @@ include $(topsrcdir)/ipc/chromium/chromi
  DEFINES		+= -D_IMPL_NS_COM
  
@@ -3479,9 +3479,9 @@ diff --git comm-release-orig/mozilla/xpcom/io/Makefile.in b/xpcom/io/Makefile.in
  
  ifdef MOZ_PLATFORM_MAEMO
  CFLAGS          += $(MOZ_PLATFORM_MAEMO_CFLAGS) $(MOZ_QT_CFLAGS)
-diff --git comm-release-orig/mozilla/xpcom/io/nsLocalFileUnix.cpp b/xpcom/io/nsLocalFileUnix.cpp
---- comm-release-orig/mozilla/xpcom/io/nsLocalFileUnix.cpp
-+++ comm-release/mozilla/xpcom/io/nsLocalFileUnix.cpp
+diff --git comm-esr17-orig/mozilla/xpcom/io/nsLocalFileUnix.cpp b/xpcom/io/nsLocalFileUnix.cpp
+--- comm-esr17-orig/mozilla/xpcom/io/nsLocalFileUnix.cpp
++++ comm-esr17/mozilla/xpcom/io/nsLocalFileUnix.cpp
 @@ -49,16 +49,17 @@
  #include "prproces.h"
  #include "nsIDirectoryEnumerator.h"

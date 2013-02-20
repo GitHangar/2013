@@ -4,9 +4,9 @@
 Bug 746112 - RegExp hang on ppc64 in execute.
 Bug 750620 - Make double-conversion portable to exotic architectures. TM: mozilla15
 
-diff --git comm-release-orig/mozilla/js/src/yarr/YarrInterpreter.h b/js/src/yarr/YarrInterpreter.h
---- comm-release-orig/mozilla/js/src/yarr/YarrInterpreter.h
-+++ comm-release/mozilla/js/src/yarr/YarrInterpreter.h
+diff --git comm-esr17-orig/mozilla/js/src/yarr/YarrInterpreter.h b/js/src/yarr/YarrInterpreter.h
+--- comm-esr17-orig/mozilla/js/src/yarr/YarrInterpreter.h
++++ comm-esr17/mozilla/js/src/yarr/YarrInterpreter.h
 @@ -162,17 +162,17 @@ struct ByteTerm {
          , m_invert(invert)
      {
@@ -45,9 +45,9 @@ diff --git comm-release-orig/mozilla/js/src/yarr/YarrInterpreter.h b/js/src/yarr
          atom.quantityType = QuantifierFixedCount;
          atom.quantityCount = 1;
          inputPosition = inputPos;
-diff --git comm-release-orig/mozilla/js/src/yarr/YarrPattern.h b/js/src/yarr/YarrPattern.h
---- comm-release-orig/mozilla/js/src/yarr/YarrPattern.h
-+++ comm-release/mozilla/js/src/yarr/YarrPattern.h
+diff --git comm-esr17-orig/mozilla/js/src/yarr/YarrPattern.h b/js/src/yarr/YarrPattern.h
+--- comm-esr17-orig/mozilla/js/src/yarr/YarrPattern.h
++++ comm-esr17/mozilla/js/src/yarr/YarrPattern.h
 @@ -166,17 +166,17 @@ struct PatternTerm {
          , m_capture(false)
          , m_invert(invert)
@@ -67,9 +67,9 @@ diff --git comm-release-orig/mozilla/js/src/yarr/YarrPattern.h b/js/src/yarr/Yar
          parentheses.subpatternId = subpatternId;
          parentheses.isCopy = false;
          parentheses.isTerminal = false;
-diff --git comm-release-orig/mozilla/memory/mozjemalloc/jemalloc.c b/memory/mozjemalloc/jemalloc.c
---- comm-release-orig/mozilla/memory/mozjemalloc/jemalloc.c
-+++ comm-release/mozilla/memory/mozjemalloc/jemalloc.c
+diff --git comm-esr17-orig/mozilla/memory/mozjemalloc/jemalloc.c b/memory/mozjemalloc/jemalloc.c
+--- comm-esr17-orig/mozilla/memory/mozjemalloc/jemalloc.c
++++ comm-esr17/mozilla/memory/mozjemalloc/jemalloc.c
 @@ -1086,17 +1086,19 @@ struct arena_s {
  static unsigned		ncpus;
  #endif
@@ -90,9 +90,9 @@ diff --git comm-release-orig/mozilla/memory/mozjemalloc/jemalloc.c b/memory/mozj
   * will abort.
   */
  #define pagesize_2pow			((size_t) 12)
-diff --git comm-release-orig/mozilla/mfbt/double-conversion/utils.h b/mfbt/double-conversion/utils.h
---- comm-release-orig/mozilla/mfbt/double-conversion/utils.h
-+++ comm-release/mozilla/mfbt/double-conversion/utils.h
+diff --git comm-esr17-orig/mozilla/mfbt/double-conversion/utils.h b/mfbt/double-conversion/utils.h
+--- comm-esr17-orig/mozilla/mfbt/double-conversion/utils.h
++++ comm-esr17/mozilla/mfbt/double-conversion/utils.h
 @@ -50,17 +50,17 @@
  // the result is equal to 89255e-22.
  // The best way to test this, is to create a division-function and to compare
