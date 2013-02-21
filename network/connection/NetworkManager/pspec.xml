@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Network connection manager powered by D-Bus and UDEV</Summary>
         <Description>NetworkManager attempts to keep an active network connection available at all times.</Description>
-        <Archive sha1sum="5fa4cb8fd690f023bc1e91b3b89a5e032f814c10" type="tarxz">mirrors://gnome/NetworkManager/0.9/NetworkManager-0.9.7.995.tar.xz</Archive>
+        <Archive sha1sum="ba453a19fbbf0e3f773bead2111fb93761c4ba83" type="tarxz">mirrors://gnome/NetworkManager/0.9/NetworkManager-0.9.8.0.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -94,6 +94,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2013-02-21</Date>
+            <Version>0.9.8.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2013-01-23</Date>
             <Version>0.9.7.995</Version>
