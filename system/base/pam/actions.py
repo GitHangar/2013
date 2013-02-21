@@ -18,7 +18,7 @@ def setup():
     shelltools.export("CFLAGS", "%s -fPIC -D_GNU_SOURCE" % get.CFLAGS())
 
     libtools.libtoolize("-f")
-    autotools.autoreconf()
+    autotools.autoreconf("-fi")
     autotools.rawConfigure("--disable-prelude \
                             --disable-dependency-tracking \
                             --enable-audit=no \
@@ -34,10 +34,11 @@ def build():
     autotools.make()
 
 def check():
-    #autotools.make("check") One test failed now, fix it
+    autotools.make("check")
+    #One test failed now, fix it
 
     # dlopen check
-    #shelltools.system("./dlopen-test.sh")
+    shelltools.system("./dlopen-test.sh")
     pass
 
 def install():
