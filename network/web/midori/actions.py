@@ -4,27 +4,26 @@
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import get
+from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 shelltools.export("JOBS", get.makeJOBS().replace("-j", ""))
 
 def setup():
-    shelltools.system("./waf configure \
-                       --prefix=/usr \
-                       --enable-nls \
-                       --update-po \
-                       --enable-docs \
-                       --enable-apidocs  \
-                       --enable-unique \
-                       --enable-libnotify \
-                       --enable-addons \
-                       --disable-hildon")
+    autotools.rawConfigure("--prefix=/usr \
+                            --enable-nls \
+                            --update-po \
+                            --enable-docs \
+                            --enable-apidocs  \
+                            --enable-unique \
+                            --enable-libnotify \
+                            --enable-addons")
 
 def build():
-    shelltools.system("./waf build --want-rpath=0")
+    shelltools.system("make")
 
 def install():
-    shelltools.system("./waf install --destdir=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.removeDir("/usr/share/gir-1.0")
 

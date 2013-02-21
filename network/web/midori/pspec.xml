@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A lightweight web browser that is based GTK+</Summary>
         <Description>Midori is a lightweight GTK+ web browser based on WebkitGtk. It features tabs, windows and session management, bookmarks stored with XBEL, searchbox based on OpenSearch, and user script support.</Description>
-        <Archive sha1sum="f32b1dc76061de3cefc222d779a7d6441b92a4fa" type="tarbz2">http://archive.xfce.org/src/apps/midori/0.4/midori-0.4.7.tar.bz2</Archive>
+        <Archive sha1sum="c76b86d70157300f7a70f8058523da0b3b7da409" type="tarbz2">mirrors://xfce/src/apps/midori/0.4/midori-0.4.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>docutils</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -71,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-21</Date>
+            <Version>0.4.8</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-11</Date>
             <Version>0.4.7</Version>
