@@ -14,7 +14,8 @@ def setup():
     shelltools.system("./autogen.sh  --disable-static \
 				     --with-gtk=2.0 \
 				     --enable-pam \
-				     --with-pam-dir=/lib/security \
+				     --prefix=/usr \
+				     --sysconfdir=/etc \
 				     --with-root-certs=/etc")
 
 def build():

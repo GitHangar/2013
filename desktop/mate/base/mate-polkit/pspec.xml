@@ -24,7 +24,7 @@
 	    <Dependency>cairo-devel</Dependency>
 	    <Dependency>pango-devel</Dependency>
 	    <Dependency>freetype-devel</Dependency>
-	    <Dependency>fontonfigc-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
 	    <Dependency>gdk-pixbuf-devel</Dependency>
 	 </BuildDependencies>
     </Source>
@@ -40,7 +40,7 @@
 	    <Dependency>cairo</Dependency>
 	    <Dependency>pango</Dependency>
 	    <Dependency>freetype</Dependency>
-	    <Dependency>fontonfigc</Dependency>
+	    <Dependency>fontconfig</Dependency>
 	    <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>

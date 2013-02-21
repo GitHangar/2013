@@ -11,7 +11,11 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh --disable-static --disable-schemas-install")
+    shelltools.system("./autogen.sh \
+                        --disable-static \
+                        --disable-schemas-install \
+                        --prefix=/usr \
+                        --sysconfdir=/etc")
 
 def build():
     autotools.make()

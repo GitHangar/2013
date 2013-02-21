@@ -40,7 +40,7 @@
 	    <Dependency>libglade</Dependency>
 	    <Dependency>atk</Dependency>
 	    <Dependency>cairo</Dependency>
-	    <Dependency>pangol</Dependency>
+	    <Dependency>pango</Dependency>
 	    <Dependency>freetype</Dependency>
 	    <Dependency>gdk-pixbuf</Dependency>
 	    <Dependency>fontconfig</Dependency>

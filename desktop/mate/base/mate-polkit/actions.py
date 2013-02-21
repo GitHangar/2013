@@ -15,6 +15,7 @@ shelltools.export("HOME", get.workDIR())
 def setup():  
     shelltools.system("./autogen.sh --prefix=/usr \
 				    --disable-static \
+				    --sysconfdir=/etc \
 				    --enable-introspection")
 
 def build():
