@@ -37,14 +37,21 @@ def setup():
 
     # Rename man pages to regenerate them
     #rename_man_pages()
-    shelltools.export("CFLAGS", "-I/usr/include/et -fPIC -fno-strict-aliasing %s" % get.CFLAGS())
+    shelltools.export("CFLAGS", "-I/usr/include/et -fPIC -fno-strict-aliasing -fno-strict-overflow -fstack-protector-all %s" % get.CFLAGS())
+
+    autotools.autoreconf("-fi")
 
     # Fix pthread linking
     pisitools.dosed("configure", "-lthread", "-lpthread")
     pisitools.dosed("configure", "-pthread", "-lpthread")
 
-    autotools.configure("--prefix=/usr \
-                         --localstatedir=/var/lib \
+    autotools.configure("--localstatedir=/var/lib \
+                         --without-tcl \
+                         --without-hesiod \
+                         --enable-shared \
+                         --enable-kdc-lookaside-cache \
+                         --without-system-verto \
+                         --disable-rpath \
                          --with-system-et \
                          --with-system-ss \
                          --enable-dns-for-realm")
@@ -63,6 +70,7 @@ def build():
    # shutil.rmtree("rm -rf %s" % tmpdir)
 
 def install():
+    pisitools.dodoc("NOTICE", "README")
     shelltools.cd("src")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
@@ -78,10 +86,6 @@ def install():
     #for app in ["rcp", "rsh", "telnet", "ftp", "rlogin"]:
      #   pisitools.rename("/usr/share/man/man1/%s.1" % app, "k%s.1" % app)
       #  pisitools.rename("/usr/bin/%s" % app, "k%s" % app)
-
-    # Install info and docs
-    pisitools.doinfo("../doc/*.info")
-    pisitools.dodoc("../README")
 
     # Remove examples
     pisitools.removeDir("/usr/share/examples")
