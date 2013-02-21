@@ -165,6 +165,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin/libreoffice</Path>
             <Path fileType="executable">/usr/bin/loffice</Path>
             <Path fileType="executable">/usr/bin/lofromtemplate</Path>
             <Path fileType="executable">/usr/bin/loweb</Path>
@@ -172,7 +173,7 @@
             <Path fileType="executable">/usr/bin/unopkg</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/idxcaption.xsl</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/idxcontent.xsl</Path>
-            <Path fileType="data">/usr/lib/libreoffice/help/main_transform.xs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/main_transform.xsl</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/en</Path>
             <Path fileType="data">/usr/lib/libreoffice/presets/Scripts</Path>
             <Path fileType="data">/usr/lib/libreoffice/presets/autocorr</Path>
@@ -436,7 +437,7 @@
             <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/lowritter</Path>
+            <Path fileType="executable">/usr/bin/lowriter</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/en/swriter.cfg</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/en/swriter.db</Path>
             <Path fileType="data">/usr/lib/libreoffice/help/en/swriter.ht</Path>
