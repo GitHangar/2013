@@ -17,6 +17,7 @@
         <Archive sha1sum="c78a19386d8b7edfc219a6092192abdf6214621c" type="targz">http://search.cpan.org/CPAN/authors/id/G/GE/GETTY/HTTP-Body-1.15.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
+            <Dependency>perl-Test-Deep</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
