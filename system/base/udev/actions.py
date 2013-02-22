@@ -47,10 +47,11 @@ def setup():
                 --disable-xz \
                 --enable-gudev \
                 --disable-selinux \
-                --disable-static \
+                --enable-static \
                 --disable-introspection" % ((suffix, )*7)
     options += " --disable-acl \
                  --disable-qrencode \
+                 --disable-static \
                  --without-python" if get.buildTYPE() == "emul32" else ""
     autotools.configure(options)
 
