@@ -169,7 +169,49 @@
       <Icon>kde</Icon>
     </Group>
     <Group>
-      <Name>kde.games</Name>
+      <Name>kde.kdeaccessibility</Name>
+      <LocalName xml:lang="en">KDE kdeaccessibility</LocalName>
+      <LocalName xml:lang="nl">KDE kdeaccessibility</LocalName>
+      <LocalName xml:lang="tr">KDE kdeaccessibility</LocalName>
+      <Icon>kde</Icon>
+    </Group> 
+    <Group>
+      <Name>kde.kdebindings</Name>
+      <LocalName xml:lang="en">KDE kdebindings</LocalName>
+      <LocalName xml:lang="nl">KDE kdebindings</LocalName>
+      <LocalName xml:lang="tr">KDE kdebindings</LocalName>
+      <Icon>kde</Icon>
+    </Group>
+    <Group>
+      <Name>kde.kdeedu</Name>
+      <LocalName xml:lang="en">KDE kdeedu</LocalName>
+      <LocalName xml:lang="nl">KDE kdeedu</LocalName>
+      <LocalName xml:lang="tr">KDE kdeedu</LocalName>
+      <Icon>kde</Icon>
+    </Group>
+    <Group>
+      <Name>kde.kdegraphics</Name>
+      <LocalName xml:lang="en">KDE kdegraphics</LocalName>
+      <LocalName xml:lang="nl">KDE kdegraphics</LocalName>
+      <LocalName xml:lang="tr">KDE kdegraphics</LocalName>
+      <Icon>kde</Icon>
+    </Group>
+    <Group>
+      <Name>kde.kdeutils</Name>
+      <LocalName xml:lang="en">KDE kdeutils</LocalName>
+      <LocalName xml:lang="nl">KDE kdeutils</LocalName>
+      <LocalName xml:lang="tr">KDE kdeutils</LocalName>
+      <Icon>kde</Icon>
+    </Group>
+    <Group>
+      <Name>kde.kdemultimedia</Name>
+      <LocalName xml:lang="en">KDE Multimedia</LocalName>
+      <LocalName xml:lang="nl">KDE Multimedia</LocalName>
+      <LocalName xml:lang="tr">KDE Multimedia</LocalName>
+      <Icon>kde</Icon>
+    </Group>    
+    <Group>
+      <Name>kde.kdegames</Name>
       <LocalName xml:lang="en">KDE Games</LocalName>
       <LocalName xml:lang="nl">KDE Games</LocalName>
       <LocalName xml:lang="tr">KDE Oyunları</LocalName>

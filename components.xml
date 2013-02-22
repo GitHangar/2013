@@ -1222,11 +1222,22 @@
             </Maintainer>
         </Component>
         <Component>
-            <Name>desktop.kde.base.kdeaccessibility</Name>
+            <Name>desktop.kde.base.kdebase</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdeaccessibility</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.kdeaccessibility</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1237,7 +1248,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.desktop</Group>
+            <Group>kde.kdebindings</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1248,7 +1259,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.desktop</Group>
+            <Group>kde.kdeedu</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1259,7 +1270,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.desktop</Group>
+            <Group>kde.kdegraphics</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1270,7 +1281,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.desktop</Group>
+            <Group>kde.kdeutils</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1281,7 +1292,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.desktop</Group>
+            <Group>kde.kdemultimedi</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1292,7 +1303,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>kde.games</Group>
+            <Group>kde.kdegames</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
