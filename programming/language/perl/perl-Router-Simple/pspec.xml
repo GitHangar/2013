@@ -17,6 +17,7 @@
         <Archive sha1sum="2def3774ad1a280b8cdac9885a92a53e8444decf" type="targz">http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Router-Simple-0.09.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
+            <Dependency>perl-Class-Accessor</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
