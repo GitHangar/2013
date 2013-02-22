@@ -17,6 +17,7 @@
         <Archive sha1sum="faeddaa6f90ccf5d0f4b693deba34a1550f3bae3" type="targz">http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Test-SharedFork-0.20.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
+            <Dependency>perl-Test-Requires</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
