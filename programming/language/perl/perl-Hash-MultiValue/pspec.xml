@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Store multiple values per key</Summary>
         <Description>Hash::MultiValue is an object (and a plain hash reference) that may contain multiple values per key, inspired by MultiDict of WebOb.</Description>
-        <Archive sha1sum="ace7989d53598e4dc502ab738b0ce342f1f89934" type="targz">http://search.cpan.org/CPAN/authors/id/A/AR/ARISTOTLE/Hash-MultiValue-0.12.tar.gz</Archive>
+        <Archive sha1sum="98352f2d2bdc9e735be3b698ed0bd2f1ca8410ea" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/Hash-MultiValue-0.13.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
         </BuildDependencies>
@@ -32,6 +32,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2013-02-23</Date>
+            <Version>0.13</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.12</Version>
