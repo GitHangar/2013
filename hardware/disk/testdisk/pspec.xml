@@ -17,10 +17,6 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>ntfsprogs</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch level="1">photorec_611_exif_bound_checking_v2.patch</Patch>
-            <Patch level="1">docdir.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
@@ -28,6 +24,7 @@
         <RuntimeDependencies>
             <Dependency>jpeg</Dependency>
             <Dependency>ntfsprogs</Dependency>
+            <Dependency>lxterminal</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
