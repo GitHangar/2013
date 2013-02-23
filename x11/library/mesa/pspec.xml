@@ -23,6 +23,7 @@
             <Dependency>libtalloc-devel</Dependency>
             <Dependency>llvm</Dependency>
             <Dependency>xorg-proto</Dependency>
+            <Dependency>libvdpau-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch level="1">git_fixes.diff</Patch-->
@@ -45,6 +46,7 @@
             <Dependency>libdrm-radeon</Dependency>
             <Dependency>libdrm-nouveau</Dependency>
             <Dependency>libtalloc</Dependency>
+            <Dependency>libvdpau</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
