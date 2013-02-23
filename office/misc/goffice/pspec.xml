@@ -14,7 +14,7 @@
         <Description>goffice, shared library implementing document centric objects and utilities for Glib / GTK+.</Description>
         <Archive sha1sum="e6458d7feb41c6b76ba6351a84c7da676a9918fd" type="tarxz">mirrors://gnome/goffice/0.10/goffice-0.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -24,13 +24,14 @@
             <Dependency>libgsf-gnome</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>goffice</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>libgsf</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>atk</Dependency>
@@ -38,6 +39,7 @@
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>librsvg</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
