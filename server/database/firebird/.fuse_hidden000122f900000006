@@ -72,7 +72,7 @@
             <Path fileType="library">/opt/firebird/lib/libicu*</Path>
             <Path fileType="doc">/opt/firebird/upgrade</Path>
             <Path fileType="data">/opt/firebird/firebird.log</Path>
-            <Path fileType="data">/run/firebird</Path>
+            <Path fileType="data">/var/run/firebird</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/firebird/hosts.equiv">hosts.equiv</AdditionalFile>

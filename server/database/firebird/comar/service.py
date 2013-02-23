@@ -7,14 +7,14 @@ serviceDesc = _({"en": "Firebird Database Server",
 
 from comar.service import *
 
-pid_file = "/var/run/firebird/firebird.pid"
+pid_file = "/run/firebird/firebird.pid"
 
 @synchronized
 def start():
     startService(command="/opt/firebird/bin/fbmgr.bin",
                  args="-pidfile %s -start -forever" % pid_file,
                  chuid="firebird",
-                 pidfile="/var/run/firebird/firebird.pid",
+                 pidfile="/run/firebird/firebird.pid",
                  donotify=True)
 
 @synchronized
