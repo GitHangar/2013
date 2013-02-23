@@ -12,9 +12,10 @@ WorkDir = "libfm-%s" % (get.srcVERSION())
 
 def setup():
     autotools.configure("--disable-static \
-                        --sysconfdir=/etc \
-                        --enable-debug \
-                        --enable-demo")
+                         --sysconfdir=/etc \
+                         --enable-debug \
+                         --enable-udisks \
+                         --enable-demo")
 
 def build():
     autotools.make()
