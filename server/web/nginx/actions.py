@@ -11,8 +11,8 @@ from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
 NGINX_HOME = '/var/lib/nginx'
-NGINX_PID  = '/var/run/nginx.pid'
-NGINX_LOCK = '/var/run/nginx.lock'
+NGINX_PID  = '/run/nginx.pid'
+NGINX_LOCK = '/run/nginx.lock'
 NGINX_CONF = '/etc/nginx/nginx.conf'
 NGINX_HTML = '/var/www/nginx'
 
