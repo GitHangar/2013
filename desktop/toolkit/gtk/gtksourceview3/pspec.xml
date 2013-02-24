@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A text widget implementing syntax highlighting and other features</Summary>
         <Description>Gtksourceview improves the gtk+ text widget by implementing syntax highlighting and other features typical of a source editor.</Description>
-        <Archive sha1sum="6d3bc20c0b7e01a63631d966af990ff13d698294" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtksourceview/3.6/gtksourceview-3.6.1.tar.xz</Archive>
+        <Archive sha1sum="6ccb737d68fcf30513008c75249502612bf33259" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtksourceview/3.7/gtksourceview-3.7.90.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>3.7.90</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-24</Date>
             <Version>3.6.1</Version>
