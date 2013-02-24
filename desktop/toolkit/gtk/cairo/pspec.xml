@@ -109,6 +109,7 @@
             <Dependency>libspectre-32bit</Dependency>
             <Dependency>librsvg-32bit</Dependency>
 	    <Dependency>poppler-32bit</Dependency>
+            <Dependency>poppler-glib-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">cairo</Dependency>
@@ -126,6 +127,7 @@
             <Dependency>mesa-32bit</Dependency>
             <Dependency>libXext-32bit</Dependency>
 	    <Dependency>poppler-32bit</Dependency>
+            <Dependency>poppler-glib-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/lib*</Path>
