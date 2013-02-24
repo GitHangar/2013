@@ -12,7 +12,7 @@
         <Isa>data</Isa>
         <Summary>Collection of GSettings schemas for GNOME desktop</Summary>
         <Description>Gsettings-desktop-schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.</Description>
-        <Archive sha1sum="a86e239289cc4939c47a93dabcb8912ade5f81fb" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gsettings-desktop-schemas/3.7/gsettings-desktop-schemas-3.7.2.tar.xz</Archive>
+        <Archive sha1sum="80de111d0c5033585ab417a4715ac376f30582e1" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.7/gsettings-desktop-schemas-3.7.90.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>3.7.90</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-21</Date>
             <Version>3.7.2</Version>
