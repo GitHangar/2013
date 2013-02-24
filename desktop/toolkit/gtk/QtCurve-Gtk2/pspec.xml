@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A set of widget styles for GTK2 based applications</Summary>
         <Description>QtCurve-Gtk2 is a nice and flexible set of widget styles for GTK2 applications.</Description>
-        <Archive sha1sum="8ef32b196cc2690a6eb8fec17f94d9c38dad2c33" type="tarbz2">http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-1.8.15.tar.bz2</Archive>
+        <Archive sha1sum="533f00bd762bcf304a29078cd6fd428c6c4f51dd" type="tarbz2">http://craigd.wikispaces.com/file/view/QtCurve-Gtk2-1.8.16.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>1.8.16</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-24</Date>
             <Version>1.8.15</Version>
