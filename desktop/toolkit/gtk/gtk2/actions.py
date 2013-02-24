@@ -10,6 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import libtools
 
 WorkDir = "gtk+-%s" % get.srcVERSION()
 
@@ -26,6 +27,10 @@ def setup():
                --disable-papi"
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))
+    #gtk2 needs -DGTK_COMPILATION CPPFLAG when compiling itself
+    #Avoid "Only <gtk/gtk.h> can be included directly error"
+    shelltools.export("CPPFLAGS", "-DGTK_COMPILATION")
+
 
     if get.buildTYPE() == "_emul32":
         options += " --libdir=/usr/lib32 \
@@ -38,9 +43,10 @@ def setup():
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS().replace("-fomit-frame-pointer",""))
         shelltools.export("CXXFLAGS", "%s -m32" % get.CFLAGS())
         shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
+        shelltools.export("CPPFLAGS", "-DGTK_COMPILATION")
 
-    #    shelltools.system("./autogen.sh")
-    autotools.autoreconf("-fiv")
+    #libtools.libtoolize("--copy --force")
+    autotools.autoreconf("-vif")
     autotools.configure(options)
 
     pisitools.dosed("libtool"," -shared ", " -Wl,-O1,--as-needed -shared ")
