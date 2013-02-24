@@ -3,7 +3,7 @@
 
 import os, pwd, socket
 
-pid_dir = "/var/run/firebird"
+pid_dir = "/run/firebird"
 log_file = "/var/log/firebird.log"
 
 uid = pwd.getpwnam("firebird")[2]

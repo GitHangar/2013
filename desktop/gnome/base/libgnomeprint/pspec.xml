@@ -22,7 +22,7 @@
             <Dependency>gtk-doc</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>cups-devel</Dependency>
-	    <Dependency>mit-kerberos</Dependency>
+            <Dependency>mit-kerberos</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">libgnomeprint-2.18.8-stdio-include.patch</Patch>
@@ -40,7 +40,7 @@
             <Dependency>cups</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>fontconfig</Dependency>
-	    <Dependency>mit-kerberos</Dependency>
+            <Dependency>mit-kerberos</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -77,7 +77,7 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01.13</Date>
+            <Date>2013-01-13</Date>
             <Version>2.18.8</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>

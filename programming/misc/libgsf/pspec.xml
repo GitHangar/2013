@@ -12,7 +12,7 @@
         <License>GPLv2</License>
         <Summary>Gnome structured file library</Summary>
         <Description>The libgsf is a library for reading and writing structured files (eg MS OLE and Zip).</Description>
-        <Archive sha1sum="75e137edd1eac3c6454579155c4f88d2d9809173" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/libgsf/1.14/libgsf-1.14.24.tar.xz</Archive>
+        <Archive sha1sum="f71130a5dcd1081dd1e0dfc49902a1db473cce0d" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/libgsf/1.14/libgsf-1.14.25.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libbonobo-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -20,7 +20,7 @@
             <Dependency>orbit2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">fix-underlinking.patch</Patch>-->
+            <Patch level="1">fix-underlinking.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -32,7 +32,8 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-	    <Path fileType="data">/usr/share/thumbnailers/gsf-office.thumbnailer</Path>
+            <Path fileType="data">/usr/share/thumbnailers/gsf-office.thumbnailer</Path>
+            <Path fileType="data">/usr/share/gir-1.0/Gsf-1.gir</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
@@ -86,6 +87,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-23</Date>
+            <Version>1.14.25</Version>
+            <Comment>version bump, fix-call missing Gsf-1.gir</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-02</Date>
             <Version>1.14.24</Version>

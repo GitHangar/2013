@@ -13,12 +13,12 @@ def start():
 
     startService(command="/usr/sbin/clamd",
             chuid="clamav",
-            pidfile="/var/run/clamav/clamd.pid",
+            pidfile="/run/clamav/clamd.pid",
             donotify=False)
     startService(command="/usr/bin/freshclam",
-            args="-d --pid=/var/run/clamav/freshclam.pid",
+            args="-d --pid=/run/clamav/freshclam.pid",
             chuid="clamav",
-            pidfile="/var/run/clamav/freshclam.pid",
+            pidfile="/run/clamav/freshclam.pid",
             donotify=True)
 
 @synchronized
@@ -32,4 +32,4 @@ def stop():
     #    call("System.Service.stop", "dazuko")
 
 def status():
-    return isServiceRunning("/var/run/clamav/clamd.pid") and isServiceRunning("/var/run/clamav/freshclam.pid")
+    return isServiceRunning("/run/clamav/clamd.pid") and isServiceRunning("/run/clamav/freshclam.pid")

@@ -14,8 +14,8 @@ def start():
 
 @synchronized
 def stop():
-    stopService(pidfile="/var/run/nginx.pid",
+    stopService(pidfile="/run/nginx.pid",
                 donotify=True)
 
 def status():
-    return isServiceRunning("/var/run/nginx.pid")
+    return isServiceRunning("/run/nginx.pid")

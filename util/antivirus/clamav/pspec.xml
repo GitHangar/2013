@@ -38,7 +38,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
             <Path fileType="data">/var/lib/clamav</Path>
-            <Path fileType="data">/var/run/clamav</Path>
+            <Path fileType="data">/run/clamav</Path>
             <Path fileType="data">/var/log/clamav</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>

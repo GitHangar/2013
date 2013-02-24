@@ -70,12 +70,12 @@ def install():
     pisitools.dosym("/etc/firebird/security2.fdb", "/opt/firebird/security2.fdb")
 
     # Set PID directory
-    shelltools.makedirs("%s/var/run/firebird" % get.installDIR())
+    shelltools.makedirs("%s/run/firebird" % get.installDIR())
     #pisitools.dodir("/opt/firebird/run")
 
     # Set permissions
     shelltools.chmod("%s/etc/firebird/security2.fdb" % get.installDIR(), 0600)
-    shelltools.chmod("%s/var/run/firebird" % get.installDIR(), 0755)
+    shelltools.chmod("%s/run/firebird" % get.installDIR(), 0755)
     #shelltools.chmod("%s/opt/firebird/run" % get.installDIR(), 0755)
 
     pisitools.dosym("/var/log/firebird.log", "/opt/firebird/firebird.log")
