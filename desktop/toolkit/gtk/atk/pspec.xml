@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GTK+ and GNOME Accessibility Toolkit</Summary>
         <Description>These libraries provide tools for making software for people with disabilities.</Description>
-        <Archive sha1sum="c4f359106ef30d1073bfa4062eb70ec58235f414" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/atk/2.7/atk-2.7.2.tar.xz</Archive>
+        <Archive sha1sum="2dbdd195d4a23cfb9a92c91e0c5b70cf6e4d990c" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/atk/2.7/atk-2.7.91.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>2.7.91</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-22</Date>
             <Version>2.7.2</Version>
