@@ -5,11 +5,10 @@
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import autotools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
+WorkDir = "glade3-%s" % get.srcVERSION()
 
 def setup():
     autotools.configure("--disable-static \

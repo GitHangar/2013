@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>glade</Name>
+        <Name>glade3</Name>
         <Homepage>http://glade.gnome.org</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ Form Designer</Summary>
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
-        <Archive sha1sum="36b2605e34ae4556d4154ab9d4b360b8b44f627b" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/glade/3.14/glade-3.14.2.tar.xz</Archive>
+        <Archive sha1sum="ef1b1243a0da1ddd22d3f7ac799608f53bf4f50f" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -32,16 +32,13 @@
             <Dependency>docbook-xml</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">fix-glade-desktop.patch</Patch>-->
             <Patch>01_gladeui-types.patch</Patch>
-            <!--<Patch level="1">linking-doc.patch</Patch>-->
-            <!--<Patch level="1">02_spinbutton-adjustment.patch</Patch>-->
-            <!--<Patch>99_ltmain_as-needed.patch</Patch>-->
+            <Patch level="1">linking-doc.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>glade</Name>
+        <Name>glade3</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -58,9 +55,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/glade</Path>
-            <Path fileType="data">/usr/share/help</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/glade3</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/gnome</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -68,11 +63,11 @@
     </Package>
 
     <Package>
-        <Name>glade-devel</Name>
+        <Name>glade3-devel</Name>
         <IsA>library</IsA>
-        <Summary>Glade development files</Summary>
+        <Summary>Glade3 development files</Summary>
         <RuntimeDependencies>
-            <Dependency version="current">glade</Dependency>
+            <Dependency version="current">glade3</Dependency>
             <Dependency>gtk3-devel</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -82,11 +77,11 @@
     </Package>
 
     <Package>
-        <Name>glade-docs</Name>
+        <Name>glade3-docs</Name>
         <IsA>data:doc</IsA>
-        <Summary>Glade reference documents</Summary>
+        <Summary>Glade3 reference documents</Summary>
         <RuntimeDependencies>
-            <Dependency version="current">glade</Dependency>
+            <Dependency version="current">glade3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
@@ -97,17 +92,10 @@
     <History>
         <Update release="2">
             <Date>2013-02-24</Date>
-            <Version>3.14.2</Version>
-            <Comment>gnome2 ile uyumllandı.</Comment>
+            <Version>3.8.3</Version>
+            <Comment>First Release.</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2013-01-13</Date>
-            <Version>3.8.3</Version>
-            <Comment>First release</Comment>
-            <Name>Ertan Güven</Name>
-            <Email>guven.ertan@gmail.com</Email>
         </Update>
     </History>
 </PISI>
