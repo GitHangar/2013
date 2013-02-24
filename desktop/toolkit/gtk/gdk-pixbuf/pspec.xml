@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GDK pixbuf library</Summary>
         <Description>gdk-pixbuf is a library that provides image loading and scaling support for gtk+ applications</Description>
-        <Archive sha1sum="94f30c417441404dcbe23206dda91730074f9b7d" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.26/gdk-pixbuf-2.26.5.tar.xz</Archive>
+        <Archive sha1sum="5a78f8d35c7303134d453acedf90d694160326b2" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gdk-pixbuf/2.27/gdk-pixbuf-2.27.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -104,6 +104,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>2.27.1</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-25</Date>
             <Version>2.26.5</Version>
