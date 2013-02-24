@@ -10,4 +10,7 @@
     <Obsoletes>
         <Package>ntfs_3g</Package>
     </Obsoletes>
+    <Obsoletes>
+        <Package>db4-java</Package>
+    </Obsoletes>
 </PISI>
