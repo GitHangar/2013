@@ -22,6 +22,7 @@
             <Dependency>avahi-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
+            <Dependency>net-snmp-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- fixes too small arrays in backend/niash.c -->
@@ -50,7 +51,8 @@
             <Dependency>libgphoto2</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>tiff</Dependency>
-            <Dependency>jpeg</Dependency>
+            <Dependency>jpeg</Dependency>            
+            <Dependency>net-snmp</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/etc/sane.d/dll.d</Path>
