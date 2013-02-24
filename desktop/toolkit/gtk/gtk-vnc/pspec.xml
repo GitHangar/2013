@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A VNC viewer widget for GTK</Summary>
         <Description>gtk-vnc is a VNC viewer widget for GTK. This widget is also used for displaying guest operating system screens within virt-manager. It is built using coroutines allowing it to be completely asynchronous while remaining single threaded.</Description>
-        <Archive sha1sum="b3266137d9cdd8bca740b84adde33b98db81f3d1" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtk-vnc/0.5/gtk-vnc-0.5.1.tar.xz</Archive>
+        <Archive sha1sum="894019db4395b72c269c76a438e78aaa48641b34" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtk-vnc/0.5/gtk-vnc-0.5.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -65,7 +65,14 @@
         </Files>
     </Package>
 
-    <History>
+     <History>
+        <Update release="2">
+            <Date>2013-02-24</Date>
+            <Version>1.5.2</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-26</Date>
             <Version>0.5.1</Version>
