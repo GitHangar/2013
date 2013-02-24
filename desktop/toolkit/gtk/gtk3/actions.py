@@ -20,6 +20,7 @@ def setup():
                --enable-xinerama \
                --with-xinput=yes \
                --enable-xkb \
+               --enable-demos \
                --enable-shm \
                --enable-silent-rules \
                --enable-introspection \
