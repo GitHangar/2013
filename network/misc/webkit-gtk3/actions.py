@@ -13,7 +13,7 @@ WorkDir = "webkitgtk-%s" % get.srcVERSION()
 
 shelltools.export("HOME", get.workDIR())
 shelltools.export("XDG_DATA_HOME", get.workDIR())
-shelltools.export("CXXFLAGS", get.CXXFLAGS().replace(" -ggdb3", ""))
+shelltools.export("CXXFLAGS", get.CXXFLAGS().replace("-ggdb3", "-g"))
 
 opt = " -fPIC" if get.ARCH() == "x86_64" else ""
 paths = ["JavaScriptCore", "WebCore", "WebKit"]
