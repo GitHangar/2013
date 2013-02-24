@@ -78,7 +78,7 @@
     <Package>
         <Name>postgresql-pl</Name>
         <RuntimeDependencies>
-            <Dependency>postgresql-lib</Dependency>
+            <Dependency versionFrom="9.2">postgresql-lib</Dependency>
             <Dependency>tcl</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -93,12 +93,19 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-25</Date>
+            <Version>9.2.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertangvn@gmail.comr</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-04</Date>
             <Version>9.2.0</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir</Email>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
     </History>
 </PISI>
