@@ -27,7 +27,7 @@ def setup():
                          --enable-introspection \
                          --enable-video \
                          --enable-filters \
-                         --with-font-backend=pango \
+                         --with-font-backend=freetype \
                          --with-unicode-backend=icu \
                          --with-gtk=3.0 \
                          --disable-gtk-doc")
