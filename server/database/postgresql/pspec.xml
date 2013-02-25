@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>A powerful, open source relational database system</Summary>
         <Description>PostgreSQL is a powerful, open source relational database system.</Description>
-        <Archive sha1sum="6ab154052dd62bb9b0cf2cd666384f7b25eefaf5" type="tarbz2">http://gd.tuwien.ac.at/db/postgresql/source/v9.2.0/postgresql-9.2.0.tar.bz2</Archive>
+        <Archive sha1sum="fe46685c36f6a7a04edd67be5695b4f5acebedff" type="tarbz2">ftp://ftp.postgresql.org/pub/source/v9.2.3/postgresql-9.2.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>tcl-devel</Dependency>
@@ -78,7 +78,7 @@
     <Package>
         <Name>postgresql-pl</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="9.2">postgresql-lib</Dependency>
+            <Dependency release="current">postgresql-lib</Dependency>
             <Dependency>tcl</Dependency>
         </RuntimeDependencies>
         <Files>
